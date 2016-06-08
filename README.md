@@ -44,7 +44,7 @@ For the prototype, dummy graphics, text and videos can be used; however, the dev
 - A Trello board will be used as needed to manage the work.
 
 ##References
--Wireframe. 
+- Wireframe. 
 - An existing OCIO Framework diagram for inspiration.
 - User Interaction example.
 - Other similar examples with similar functionality:
