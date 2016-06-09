@@ -29,7 +29,9 @@ For the prototype, dummy graphics, text and videos can be used; however, the dev
 
 - Hosting of the site.
 
-##Desired Features
+##The End Result
+
+We will iteratively work on this project. Here's a few thoughts on the desired features for the end-state:
 
 - Provide the final product in a format that can be run on any computer (localhost) through any modern web-browser.
 
@@ -41,7 +43,6 @@ For the prototype, dummy graphics, text and videos can be used; however, the dev
 
 - Use of commonly known, open web frameworks.
 
-- A Trello board will be used as needed to manage the work.
 
 ##References
 - Wireframe. 
