@@ -6,7 +6,7 @@ The Office of the Chief Information Officer (OCIO) is a central agency of the Pr
 ##Why
 The OCIO is looking for the development of an online infographic for users to interact with. The purpose is to clearly convey multi-dimensional information in a user-friendly, interactive, digital format.
 
-The [OCIO Strategic FrameWork diagram](/https://raw.githubusercontent.com/bcgov/interactive-infographic/master/wireframe/OCIO_Strategy_Framework.png) is a guide.
+The [OCIO Strategic FrameWork diagram](https://raw.githubusercontent.com/bcgov/interactive-infographic/master/wireframe/OCIO_Strategy_Framework.png) is a guide.
 
 ##What 
 This [wireframe](https://github.com/bcgov/interactive-infographic/blob/master/wireframe/wireframe.png) illustrates how the main screen of the interactive infographic might look, and offers some visual context. 
