@@ -67,7 +67,6 @@ Please note that this project is released with a [Contributor Code of Conduct](
 
 - All code in the /code directory is licensed under the Apache License 2.0. See LICENSE.Apache-2.0 in the appropriate directories.
 
-Copyright 2015 Province of British Columbia
 
 
 	Licensed under the Apache License, Version 2.0 (the "License");
@@ -85,5 +84,3 @@ Copyright 2015 Province of British Columbia
 
 
 
-
-- All documents in the /docs directory is licensed under a Creative Commons Attribution 4.0 International License. See LICENSE.CC-4.0 in the appropriate directories.
