@@ -63,9 +63,7 @@ Please note that this project is released with a [Contributor Code of Conduct](
 
 ##License
 
- The code and documents in this repository are licensed under different licenses.
-
-- All code in the /code directory is licensed under the Apache License 2.0. See LICENSE.Apache-2.0 in the appropriate directories.
+All code in the /code directory is licensed under the Apache License 2.0. See LICENSE.Apache-2.0 in the appropriate directories.
 
 
 
