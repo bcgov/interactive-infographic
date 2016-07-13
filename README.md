@@ -13,12 +13,12 @@ This [wireframe](https://github.com/bcgov/interactive-infographic/blob/master/wi
 
 This [second diagram](https://github.com/bcgov/interactive-infographic/blob/master/wireframe/user-interaction.png) illustrates how a user might interact with the infographic.
 
-The first work (i.e. issue) will be to collaborate and validate the wireframe and user interaction diagram. Determine the suitable approach to developing a flexible infographic structure/framework/navigation that can be easily modified after development.
 
 ##Design: 
 Ensure that the “content boxes (see wireframe)” can be resized vertically or horizontally, reordered, new content boxes can be added or existing ones removed, graphics, videos and text can be replaced, and additional “content elements” can added to a “content box” or existing ones removed. 
 
-Once the suitable approach is agreed on, the next work (i.e. issue) will be to develop a working prototype. Based on the collaborative decisions in the first work (i.e. issue), user navigation/interactive features e.g. expanding/collapsing content “accordion”, opening dialog windows for more information, tabs, sliders etc… may be included.
+The working prototype may include user navigation/interactive features, including expanding/collapsing content “accordion”, opening dialog windows for more information, tabs, sliders etc.
+
 For the prototype, dummy graphics, text and videos can be used; however, the dev will be expected to provide guidance on how government staff can best ready the production graphics, videos and text (e.g. format, etc) that will eventually populate the live site.
 
 ##Out of scope:
