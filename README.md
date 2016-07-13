@@ -17,9 +17,9 @@ This [second diagram](https://github.com/bcgov/interactive-infographic/blob/mast
 ##Design: 
 Ensure that the “content boxes (see wireframe)” can be resized vertically or horizontally, reordered, new content boxes can be added or existing ones removed, graphics, videos and text can be replaced, and additional “content elements” can added to a “content box” or existing ones removed. 
 
-The working prototype may include user navigation/interactive features, including expanding/collapsing content “accordion”, opening dialog windows for more information, tabs, sliders etc.
+The working prototype may include user navigation/interactive features, including expanding/collapsing content “accordion”, opening dialog windows for more information, tabs, sliders, etc.
 
-For the prototype, dummy graphics, text and videos can be used; however, the dev will be expected to provide guidance on how government staff can best ready the production graphics, videos and text (e.g. format, etc) that will eventually populate the live site.
+For the prototype, dummy graphics, text and videos can be used; however, the developer will be expected to provide guidance on how government staff can best ready the production graphics, videos and text (e.g. format, etc.) that will eventually populate the live site.
 
 ##Out of scope:
 - Selection or development of content (e.g. graphics, images, videos, etc.).
