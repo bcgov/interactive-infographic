@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+  head
+    link(
+      rel="stylesheet" 
+      href="css/bootstrap.min.css"
+    )
+    style.
+      
+  body
+    .container-fluid
+      .row
+        .col-sm-6
+          | content 1
+        .col-sm-6
+          | content 2
+      .row
+        .col-sm-2
+          a(
+            role="button" 
+            data-toggle="collapse" 
+            href="#collapse1" 
+            aria-expanded="false" 
+            aria-controls="collapse1"
+          )  Link with href
+        .col-sm-2
+          a(
+            role="button" 
+            data-toggle="collapse" 
+            href="#collapse2" 
+            aria-expanded="false" 
+            aria-controls="collapse2"
+          )  Link with href
+        .col-sm-2
+          | content 5
+        .col-sm-2
+          | content 6
+        .col-sm-2
+          | content 7
+
+      .row
+        #collapse1.collapse.col-sm-12
+          | Collapse 1
+        #collapse2.collapse.col-sm-12
+          | Collapse 2
+
+
+
+    script(
+      src='js/jquery.min.js'
+    )
+    script(
+      src="js/collapse.js"
+    )
+    script(
+      src="js/transition.js"
+    )
