@@ -6,46 +6,113 @@ html(lang="en")
       href="css/bootstrap.min.css"
     )
     style.
-      
+      .accordion_btn {
+        color: black;
+        border: none;
+        padding: 0;
+        display: block;
+        text-align: left;
+        background-color: transparent;
+      }
+      .accordion_btn[aria-pressed='true'] {
+        background: green;
+        color: white;
+      }
+      .accordion_btn[aria-pressed='false'] {
+      }
+      [aria-hidden='true'] {
+        display: none;
+      }
   body
-    .container-fluid
+    .container-fluid.js-accordionContainer
+      //- Row of static content
       .row
         .col-sm-6
-          | content 1
+          h2 Static content
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi eos, aspernatur adipisci rem perferendis facere, at voluptates et praesentium reiciendis maxime iste minus aut beatae cupiditate totam officiis fugiat.
         .col-sm-6
-          | content 2
+          h2 Static content
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi repudiandae omnis nostrum esse illum beatae magnam voluptates perspiciatis, obcaecati dolores ex excepturi, voluptatem id deleniti ullam? Alias possimus ea, saepe.
+      //- Row of accordion triggers
       .row
         .col-sm-2
-          a(
+          a.accordion_btn.js-accordion(
             role="button" 
-            data-toggle="collapse" 
             href="#collapse1" 
             aria-expanded="false" 
             aria-controls="collapse1"
-          )  Link with href
+          )  Accordion Trigger: Link with href
         .col-sm-2
-          a(
+          button.accordion_btn.js-accordion(
             role="button" 
-            data-toggle="collapse" 
-            href="#collapse2" 
+            data-href="#collapse2" 
             aria-expanded="false" 
             aria-controls="collapse2"
-          )  Link with href
+          )  Accordion Trigger: Button with data-href
         .col-sm-2
-          | content 5
+          a.accordion_btn.js-accordion(
+            role="button" 
+            href="#collapse3" 
+            aria-expanded="false" 
+            aria-controls="collapse3"
+          )  Accordion Trigger: Link with href
         .col-sm-2
-          | content 6
-        .col-sm-2
-          | content 7
-
+          button.accordion_btn.js-accordion(
+            role="button" 
+            data-href="#collapse4" 
+            aria-expanded="false" 
+            aria-controls="collapse4"
+          )  Accordion Trigger: Button with data-href
+        .col-sm-4
+          a.accordion_btn.js-accordion(
+            role="button" 
+            href="#collapse5" 
+            aria-expanded="false" 
+            aria-controls="collapse5"
+          )  Accordion Trigger: Link with href
+      //- Hidden row of accordion panels
       .row
-        #collapse1.collapse.col-sm-12
-          | Collapse 1
-        #collapse2.collapse.col-sm-12
-          | Collapse 2
+        #collapse1.col-sm-12(
+          aria-hidden="true"
+        )
+          h2 Accordion Target: Link with href
+          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eum nihil magni excepturi saepe dolorem, ut magnam iusto repellendus nisi nulla nobis amet vitae architecto pariatur ea quidem, aliquam ab.
+
+        #collapse2.col-sm-12(
+          aria-hidden="true"
+        )
+          h2 Accordion Target: Button with data-href
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint at incidunt, quibusdam tenetur velit sunt placeat perferendis fugiat dolor quaerat repellendus ipsum natus, sapiente itaque perspiciatis, nihil dolore ipsa!
+        #collapse3.col-sm-12(
+          aria-hidden="true"
+        )
+          h2 Accordion Target: Link with href
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsa neque impedit dolor consectetur quas officia hic! Asperiores nulla sapiente doloremque cum, fugit voluptatem, nemo tempora, dignissimos officia fuga qui!
+
+        #collapse4.col-sm-12(
+          aria-hidden="true"
+        )
+          h2 Accordion Target: Button with data-href
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim incidunt quasi minus non animi magni labore asperiores maxime soluta, eum libero eligendi excepturi nobis. Quos, labore. Tenetur soluta magni est!
+        #collapse5.col-sm-12(
+          aria-hidden="true"
+        )
+          h2 Accordion Target: Link with href
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla aliquam, suscipit id quisquam. Eum non autem accusantium amet illo soluta officiis odit sint, consequatur, dolorum, voluptates quo dignissimos obcaecati.
+      //- Row of static content
+      .row
+        .col-sm-6
+          h2 Static content
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolorem harum iusto possimus officia atque, rerum reprehenderit facere, delectus voluptate temporibus! Facere expedita atque ex provident at animi illo dicta!
+        .col-sm-6
+          h2 Static content
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum atque, minima hic maiores quidem, quisquam corporis, sunt quod at totam nisi repudiandae fugit eum! Recusandae vel maxime illum porro itaque?
 
 
 
+    script(
+      src='js/shim.js'
+    )
     script(
       src='js/jquery.min.js'
     )
@@ -54,4 +121,7 @@ html(lang="en")
     )
     script(
       src="js/transition.js"
+    )
+    script(
+      src="js/main.js"
     )

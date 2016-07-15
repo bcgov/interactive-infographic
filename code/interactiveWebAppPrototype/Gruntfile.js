@@ -63,7 +63,7 @@ module.exports = function (grunt) {
 
     watch: {
       src: {
-        files: ['*.pug'],
+        files: ['*.pug', 'js/main.js'],
         tasks: ['pug'],
         options: {
           livereload: true
