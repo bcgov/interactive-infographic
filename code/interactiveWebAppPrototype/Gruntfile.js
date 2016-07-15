@@ -11,13 +11,21 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     copy: {
-      custom: {
+      customJs: {
         expand: true,
         cwd: 'js/',
         src: [
           '**/*.js'
         ],
         dest: 'build/js'
+      },
+      customMedia: {
+        expand: true,
+        cwd: 'media/',
+        src: [
+          '**/*'
+        ],
+        dest: 'build/media'
       },
       jquery: {
         expand: true,
@@ -89,7 +97,7 @@ module.exports = function (grunt) {
 
     watch: {
       src: {
-        files: ['*.pug', 'js/main.js', 'sass/**/*.scss'],
+        files: ['pug/**/*.pug', 'js/**/*.js', 'sass/**/*.scss'],
         tasks: ['sass', 'pug'],
         options: {
           livereload: true

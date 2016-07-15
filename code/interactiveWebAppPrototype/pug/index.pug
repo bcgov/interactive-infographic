@@ -13,22 +13,22 @@ html(lang="en")
       
   body
     .container-fluid.js-accordionContainer
-      //- Row of static content
+      
       .row
-        .col-sm-2
+        .col-xs-2
           h2 OCIO
-        .col-sm-6
+        .col-xs-6
           P Message from the OCIO
-        .col-sm-2
+        .col-xs-2
           .embed-responsive.embed-responsive-16by9
             iframe.embed-responsive-item(
               allowfullscreen
               src='https://www.youtube.com/embed/YtGh6ebc5lw'
             )
-        .col-sm-2
-          a.accordionBtn.js-accordion(
+        .col-xs-2
+          button.accordionBtn.js-accordion(
             role="button" 
-            href="#aboutTheOcio" 
+            data-href="#aboutTheOcio" 
             aria-expanded="false" 
             aria-controls="aboutTheOcio"
           ) About the OCIO
@@ -37,95 +37,102 @@ html(lang="en")
           )
             h2 About the OCIO
             p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit vel iure animi quaerat amet est nam non soluta ipsum laboriosam esse omnis, corporis at eligendi, impedit in tenetur. Aperiam?
-          
-      //- Row of accordion triggers
+
       .row
-        .col-sm-2
-          a.accordionBtn.js-accordion(
-            role="button" 
-            href="#collapse1" 
-            aria-expanded="false" 
-            aria-controls="collapse1"
-          ) Accordion Trigger: Link with href
-        .col-sm-2
+        .col-xs-6
           button.accordionBtn.js-accordion(
             role="button" 
-            data-href="#collapse2" 
+            data-href="#content1" 
             aria-expanded="false" 
-            aria-controls="collapse2"
-          )  Accordion Trigger: Button with data-href
-        .col-sm-2
-          a.accordionBtn.js-accordion(
-            role="button" 
-            href="#collapse3" 
-            aria-expanded="false" 
-            aria-controls="collapse3"
-          )  Accordion Trigger: Link with href
-        .col-sm-2
+            aria-controls="content1"
+          ) Job Creation and Investment
+        .col-xs-6
           button.accordionBtn.js-accordion(
             role="button" 
-            data-href="#collapse4" 
+            data-href="#content2" 
             aria-expanded="false" 
-            aria-controls="collapse4"
-          )  Accordion Trigger: Button with data-href
-        .col-sm-4
-          a.accordionBtn.js-accordion(
-            role="button" 
-            href="#collapse5" 
-            aria-expanded="false" 
-            aria-controls="collapse5"
-          )  Accordion Trigger: Link with href
+            aria-controls="content2"
+          )  Support for Families
+
       //- Hidden row of accordion panels
       .row
-        #collapse1.col-sm-12(
+        #content1.accordionPanel.col-xs-12(
           aria-hidden="true"
         )
-          h2 Accordion Target: Link with href
+          h2 Job Creation and Investment
           p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eum nihil magni excepturi saepe dolorem, ut magnam iusto repellendus nisi nulla nobis amet vitae architecto pariatur ea quidem, aliquam ab.
 
-        #collapse2.col-sm-12(
+        #content2.accordionPanel.col-xs-12(
           aria-hidden="true"
         )
-          h2 Accordion Target: Button with data-href
+          h2 Support for Families
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint at incidunt, quibusdam tenetur velit sunt placeat perferendis fugiat dolor quaerat repellendus ipsum natus, sapiente itaque perspiciatis, nihil dolore ipsa!
-        #collapse3.col-sm-12(
-          aria-hidden="true"
-        )
-          h2 Accordion Target: Link with href
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsa neque impedit dolor consectetur quas officia hic! Asperiores nulla sapiente doloremque cum, fugit voluptatem, nemo tempora, dignissimos officia fuga qui!
 
-        #collapse4.col-sm-12(
-          aria-hidden="true"
-        )
-          h2 Accordion Target: Button with data-href
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim incidunt quasi minus non animi magni labore asperiores maxime soluta, eum libero eligendi excepturi nobis. Quos, labore. Tenetur soluta magni est!
-        #collapse5.col-sm-12(
-          aria-hidden="true"
-        )
-          h2 Accordion Target: Link with href
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla aliquam, suscipit id quisquam. Eum non autem accusantium amet illo soluta officiis odit sint, consequatur, dolorum, voluptates quo dignissimos obcaecati.
-      //- Row of static content
+
+      
       .row
-        .col-sm-6
-          h2 Static content
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolorem harum iusto possimus officia atque, rerum reprehenderit facere, delectus voluptate temporibus! Facere expedita atque ex provident at animi illo dicta!
-        .col-sm-6
+        .col-xs-1
+          h2 SVG
+          img(
+            src='media/globe.svg'
+          )
+        .col-xs-2
           h2 Static content
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum atque, minima hic maiores quidem, quisquam corporis, sunt quod at totam nisi repudiandae fugit eum! Recusandae vel maxime illum porro itaque?
+        .col-xs-3
+          h2 Static content
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum atque, minima hic maiores quidem, quisquam corporis, sunt quod at totam nisi repudiandae fugit eum! Recusandae vel maxime illum porro itaque?
+        .col-xs-6
+          h2 Static content
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum atque, minima hic maiores quidem, quisquam corporis, sunt quod at totam nisi repudiandae fugit eum! Recusandae vel maxime illum porro itaque?
+      
+      .row
+        .col-xs-4
+          button.accordionBtn.accordionBtn--alt1.js-accordion(
+            role="button" 
+            data-href="#content3" 
+            aria-expanded="false" 
+            aria-controls="content3"
+          ) Environment for Businesses to Succeed
+        .col-xs-4
+          button.accordionBtn.accordionBtn--alt1.js-accordion(
+            role="button" 
+            data-href="#content4" 
+            aria-expanded="false" 
+            aria-controls="content4"
+          ) Easier Interactions with Government for Citizens and Businesses
+        .col-xs-4
+          button.accordionBtn.accordionBtn--alt1.js-accordion(
+            role="button" 
+            data-href="#content5" 
+            aria-expanded="false" 
+            aria-controls="content5"
+          ) Efficient &amp; Effective Services for the Public Sector
 
+      .row
+        #content3.accordionPanel.accordionPanel--alt1.col-xs-12(
+          aria-hidden="true"
+        )
+          h2 Environment for Businesses to Succeed
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsa neque impedit dolor consectetur quas officia hic! Asperiores nulla sapiente doloremque cum, fugit voluptatem, nemo tempora, dignissimos officia fuga qui!
 
+        #content4.accordionPanel.accordionPanel--alt1.col-xs-12(
+          aria-hidden="true"
+        )
+          h2 Easier Interactions with Government for Citizens and Businesses
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim incidunt quasi minus non animi magni labore asperiores maxime soluta, eum libero eligendi excepturi nobis. Quos, labore. Tenetur soluta magni est!
+
+        #content5.accordionPanel.accordionPanel--alt1.col-xs-12(
+          aria-hidden="true"
+        )
+          h2 Efficient &amp; Effective Services for the Public Sector
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla aliquam, suscipit id quisquam. Eum non autem accusantium amet illo soluta officiis odit sint, consequatur, dolorum, voluptates quo dignissimos obcaecati.
 
     script(
       src='js/shim.js'
     )
     script(
       src='js/jquery.min.js'
-    )
-    script(
-      src="js/collapse.js"
-    )
-    script(
-      src="js/transition.js"
     )
     script(
       src="js/main.js"

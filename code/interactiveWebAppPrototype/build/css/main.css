@@ -9,12 +9,31 @@
 .accordionBtn {
   color: black;
   border: none;
-  padding: 0;
+  padding: 0 10px;
   display: block;
   text-align: left;
-  background-color: transparent; }
+  background-color: #0dabc5;
+  border-radius: 10px 0 10px 0;
+  text-align: center;
+  color: #fff;
+  min-height: 72px;
+  width: 100%;
+  vertical-align: middle; }
 
-/* line 16, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
+/* line 22, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
 .accordionBtn[aria-pressed='true'] {
-  background: green;
-  color: white; }
+  border-radius: 10px 0 0 0; }
+
+/* line 27, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
+.accordionBtn--alt1 {
+  background-color: #8dc642; }
+
+/* line 31, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
+.accordionPanel {
+  background-color: #0dabc5;
+  border-radius: 10px 0 10px 0;
+  color: #fff; }
+
+/* line 36, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
+.accordionPanel--alt1 {
+  background-color: #8dc642; }
