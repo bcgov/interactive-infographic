@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style></style>
+  </head>
+  <body>
+    <div class="container-fluid js-accordionContainer">
+      <div class="row">
+        <div class="col-sm-2">
+          <h2>OCIO</h2>
+        </div>
+        <div class="col-sm-6">
+          <P>Message from the OCIO</P>
+        </div>
+        <div class="col-sm-2">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" allowfullscreen src="https://www.youtube.com/embed/YtGh6ebc5lw"></iframe>
+          </div>
+        </div>
+        <div class="col-sm-2"><a class="accordionBtn js-accordion" role="button" href="#aboutTheOcio" aria-expanded="false" aria-controls="aboutTheOcio">About the OCIO</a>
+          <div id="aboutTheOcio" aria-hidden="true">
+            <h2>About the OCIO</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit vel iure animi quaerat amet est nam non soluta ipsum laboriosam esse omnis, corporis at eligendi, impedit in tenetur. Aperiam?</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"><a class="accordionBtn js-accordion" role="button" href="#collapse1" aria-expanded="false" aria-controls="collapse1">Accordion Trigger: Link with href</a></div>
+        <div class="col-sm-2">
+          <button class="accordionBtn js-accordion" role="button" data-href="#collapse2" aria-expanded="false" aria-controls="collapse2"> Accordion Trigger: Button with data-href</button>
+        </div>
+        <div class="col-sm-2"><a class="accordionBtn js-accordion" role="button" href="#collapse3" aria-expanded="false" aria-controls="collapse3"> Accordion Trigger: Link with href</a></div>
+        <div class="col-sm-2">
+          <button class="accordionBtn js-accordion" role="button" data-href="#collapse4" aria-expanded="false" aria-controls="collapse4"> Accordion Trigger: Button with data-href</button>
+        </div>
+        <div class="col-sm-4"><a class="accordionBtn js-accordion" role="button" href="#collapse5" aria-expanded="false" aria-controls="collapse5"> Accordion Trigger: Link with href</a></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" id="collapse1" aria-hidden="true">
+          <h2>Accordion Target: Link with href</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eum nihil magni excepturi saepe dolorem, ut magnam iusto repellendus nisi nulla nobis amet vitae architecto pariatur ea quidem, aliquam ab.</p>
+        </div>
+        <div class="col-sm-12" id="collapse2" aria-hidden="true">
+          <h2>Accordion Target: Button with data-href</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint at incidunt, quibusdam tenetur velit sunt placeat perferendis fugiat dolor quaerat repellendus ipsum natus, sapiente itaque perspiciatis, nihil dolore ipsa!</p>
+        </div>
+        <div class="col-sm-12" id="collapse3" aria-hidden="true">
+          <h2>Accordion Target: Link with href</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsa neque impedit dolor consectetur quas officia hic! Asperiores nulla sapiente doloremque cum, fugit voluptatem, nemo tempora, dignissimos officia fuga qui!</p>
+        </div>
+        <div class="col-sm-12" id="collapse4" aria-hidden="true">
+          <h2>Accordion Target: Button with data-href</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim incidunt quasi minus non animi magni labore asperiores maxime soluta, eum libero eligendi excepturi nobis. Quos, labore. Tenetur soluta magni est!</p>
+        </div>
+        <div class="col-sm-12" id="collapse5" aria-hidden="true">
+          <h2>Accordion Target: Link with href</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla aliquam, suscipit id quisquam. Eum non autem accusantium amet illo soluta officiis odit sint, consequatur, dolorum, voluptates quo dignissimos obcaecati.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Static content</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolorem harum iusto possimus officia atque, rerum reprehenderit facere, delectus voluptate temporibus! Facere expedita atque ex provident at animi illo dicta!</p>
+        </div>
+        <div class="col-sm-6">
+          <h2>Static content</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum atque, minima hic maiores quidem, quisquam corporis, sunt quod at totam nisi repudiandae fugit eum! Recusandae vel maxime illum porro itaque?</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/shim.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

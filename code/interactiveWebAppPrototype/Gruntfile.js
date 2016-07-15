@@ -11,13 +11,21 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     copy: {
+      custom: {
+        expand: true,
+        cwd: 'js/',
+        src: [
+          '**/*.js'
+        ],
+        dest: 'build/js'
+      },
       jquery: {
         expand: true,
         cwd: 'node_modules/jquery/dist/',
         src: [
           'jquery.min.js'
         ],
-        dest: './js'
+        dest: 'build/js'
       },
       bootstrapJs: {
         expand: true,
@@ -26,7 +34,7 @@ module.exports = function (grunt) {
           'js/collapse.js',
           'js/transition.js'
         ],
-        dest: './'
+        dest: 'build/'
       },
       bootstrapCss: {
         expand: true,
@@ -34,7 +42,7 @@ module.exports = function (grunt) {
         src: [
           'css/bootstrap.min.css'
         ],
-        dest: './'
+        dest: 'build/'
       }
     },
 
@@ -42,7 +50,7 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 3000,
-          base: '.'
+          base: 'build/'
         }
       }
     },
@@ -55,16 +63,34 @@ module.exports = function (grunt) {
             debug: false
           }
         },
+        files: [{
+          expand: true,
+          ext: '.html',
+          cwd: 'pug/',
+          src: [
+            '**/*.pug'
+          ],
+          dest: 'build/'
+        }]
+      }
+    },
+
+    sass: {
+      options: {
+        sourceMap: false,
+        sourceComments: true
+      },
+      compile: {
         files: {
-          'index.html': ['index.pug']
+            'build/css/main.css': 'sass/main.scss'
         }
       }
     },
 
     watch: {
       src: {
-        files: ['*.pug', 'js/main.js'],
-        tasks: ['pug'],
+        files: ['*.pug', 'js/main.js', 'sass/**/*.scss'],
+        tasks: ['sass', 'pug'],
         options: {
           livereload: true
         }
@@ -77,5 +103,5 @@ module.exports = function (grunt) {
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 
-  grunt.registerTask('default', ['copy', 'pug', 'connect', 'watch']);
+  grunt.registerTask('default', ['sass', 'copy', 'pug', 'connect', 'watch']);
 };

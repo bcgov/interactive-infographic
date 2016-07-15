@@ -1,0 +1,21 @@
+/* ================================================
+  General
+================================================ */
+[aria-hidden='true'] {
+  display: none;
+}
+
+.accordionBtn {
+  color: black;
+  border: none;
+  padding: 0;
+  display: block;
+  text-align: left;
+  background-color: transparent;
+}
+.accordionBtn[aria-pressed='true'] {
+  background: green;
+  color: white;
+}
+.accordionBtn[aria-pressed='false'] {
+}

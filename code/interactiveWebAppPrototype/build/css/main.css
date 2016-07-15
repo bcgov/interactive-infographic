@@ -1,0 +1,20 @@
+/* ================================================
+  General
+================================================ */
+/* line 4, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
+[aria-hidden='true'] {
+  display: none; }
+
+/* line 8, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
+.accordionBtn {
+  color: black;
+  border: none;
+  padding: 0;
+  display: block;
+  text-align: left;
+  background-color: transparent; }
+
+/* line 16, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
+.accordionBtn[aria-pressed='true'] {
+  background: green;
+  color: white; }

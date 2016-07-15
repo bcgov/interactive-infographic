@@ -5,66 +5,71 @@ html(lang="en")
       rel="stylesheet" 
       href="css/bootstrap.min.css"
     )
+    link(
+      rel="stylesheet" 
+      href="css/main.css"
+    )
     style.
-      .accordion_btn {
-        color: black;
-        border: none;
-        padding: 0;
-        display: block;
-        text-align: left;
-        background-color: transparent;
-      }
-      .accordion_btn[aria-pressed='true'] {
-        background: green;
-        color: white;
-      }
-      .accordion_btn[aria-pressed='false'] {
-      }
-      [aria-hidden='true'] {
-        display: none;
-      }
+      
   body
     .container-fluid.js-accordionContainer
       //- Row of static content
       .row
+        .col-sm-2
+          h2 OCIO
         .col-sm-6
-          h2 Static content
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi eos, aspernatur adipisci rem perferendis facere, at voluptates et praesentium reiciendis maxime iste minus aut beatae cupiditate totam officiis fugiat.
-        .col-sm-6
-          h2 Static content
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi repudiandae omnis nostrum esse illum beatae magnam voluptates perspiciatis, obcaecati dolores ex excepturi, voluptatem id deleniti ullam? Alias possimus ea, saepe.
+          P Message from the OCIO
+        .col-sm-2
+          .embed-responsive.embed-responsive-16by9
+            iframe.embed-responsive-item(
+              allowfullscreen
+              src='https://www.youtube.com/embed/YtGh6ebc5lw'
+            )
+        .col-sm-2
+          a.accordionBtn.js-accordion(
+            role="button" 
+            href="#aboutTheOcio" 
+            aria-expanded="false" 
+            aria-controls="aboutTheOcio"
+          ) About the OCIO
+          #aboutTheOcio(
+            aria-hidden='true'
+          )
+            h2 About the OCIO
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit vel iure animi quaerat amet est nam non soluta ipsum laboriosam esse omnis, corporis at eligendi, impedit in tenetur. Aperiam?
+          
       //- Row of accordion triggers
       .row
         .col-sm-2
-          a.accordion_btn.js-accordion(
+          a.accordionBtn.js-accordion(
             role="button" 
             href="#collapse1" 
             aria-expanded="false" 
             aria-controls="collapse1"
-          )  Accordion Trigger: Link with href
+          ) Accordion Trigger: Link with href
         .col-sm-2
-          button.accordion_btn.js-accordion(
+          button.accordionBtn.js-accordion(
             role="button" 
             data-href="#collapse2" 
             aria-expanded="false" 
             aria-controls="collapse2"
           )  Accordion Trigger: Button with data-href
         .col-sm-2
-          a.accordion_btn.js-accordion(
+          a.accordionBtn.js-accordion(
             role="button" 
             href="#collapse3" 
             aria-expanded="false" 
             aria-controls="collapse3"
           )  Accordion Trigger: Link with href
         .col-sm-2
-          button.accordion_btn.js-accordion(
+          button.accordionBtn.js-accordion(
             role="button" 
             data-href="#collapse4" 
             aria-expanded="false" 
             aria-controls="collapse4"
           )  Accordion Trigger: Button with data-href
         .col-sm-4
-          a.accordion_btn.js-accordion(
+          a.accordionBtn.js-accordion(
             role="button" 
             href="#collapse5" 
             aria-expanded="false" 
