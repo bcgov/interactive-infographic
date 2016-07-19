@@ -7,7 +7,7 @@ Technology/Libraries in use
 - [Grunt task runner](http://gruntjs.com/) Runs other apps/libs, eg: concat all the css files
 - [Sass](http://sass-lang.com/) CSS more like a programming language, needs to compile
 - [Pug](https://github.com/pugjs/pug) aka [Jade](http://jade-lang.com/) Easier html, needs to compile
-- [Bootstrap](http://getbootstrap.com/javascript/#popovers) FE building blocks
+- [Bootstrap](http://getbootstrap.com/) FE building blocks
 - [Simplified BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) CSS naming convention
 
 Building
@@ -43,6 +43,17 @@ The js & css is toggling visibility via the `aria-hidden` attribute on the conte
     [aria-hidden='true'] {
       display: none;
      }
+
+The accordion 'triggers' can be styled using the `aria-pressed` attribute:
+
+    .contentBtn[aria-pressed='true'] {
+      border-radius: 10px 0 0 0;
+      //...
+    }
+    
+    .contentBtn[aria-pressed='false'] {
+      //...
+    }
 
 YouTube
 ================
