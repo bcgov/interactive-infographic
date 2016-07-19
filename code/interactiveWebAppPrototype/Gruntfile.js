@@ -35,15 +35,15 @@ module.exports = function (grunt) {
         ],
         dest: 'build/js'
       },
-      // bootstrapJs: {
-      //   expand: true,
-      //   cwd: 'node_modules/bootstrap/',
-      //   src: [
-      //     'js/collapse.js',
-      //     'js/transition.js'
-      //   ],
-      //   dest: 'build/'
-      // },
+      bootstrapJs: {
+        expand: true,
+        cwd: 'node_modules/bootstrap/',
+        src: [
+          'js/modal.js',
+          'js/transition.js'
+        ],
+        dest: 'build/'
+      },
       bootstrapCss: {
         expand: true,
         cwd: 'node_modules/bootstrap/dist/',
@@ -98,12 +98,12 @@ module.exports = function (grunt) {
     watch: {
       src: {
         files: ['pug/**/*.pug', 'js/**/*.js', 'sass/**/*.scss'],
-        tasks: ['sass', 'pug'],
+        tasks: ['sass', 'pug', 'copy:customJs', 'copy:customMedia'],
         options: {
           livereload: true
         }
       }
-    },
+    }
 
   });
 

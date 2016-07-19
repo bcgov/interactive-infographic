@@ -5,7 +5,7 @@
   display: none;
 }
 
-.accordionBtn {
+.contentBtn {
   color: black;
   border: none;
   padding: 0 10px;
@@ -19,20 +19,20 @@
   width: 100%;
   vertical-align: middle;
 }
-.accordionBtn[aria-pressed='true'] {
+.contentBtn[aria-pressed='true'] {
   border-radius: 10px 0 0 0;
 }
-.accordionBtn[aria-pressed='false'] {
+.contentBtn[aria-pressed='false'] {
 }
-.accordionBtn--alt1 {
+.contentBtn--alt1 {
   background-color: #8dc642;
 }
 
-.accordionPanel {
+.contentPanel {
   background-color: #0dabc5;
   border-radius: 10px 0 10px 0;
   color: #fff;
 }
-.accordionPanel--alt1 {
+.contentPanel--alt1 {
   background-color: #8dc642;
 }
