@@ -29,11 +29,15 @@
   background-color: #8dc642; }
 
 /* line 31, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
+.contentBtnYoutube {
+  cursor: pointer; }
+
+/* line 35, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
 .contentPanel {
   background-color: #0dabc5;
   border-radius: 10px 0 10px 0;
   color: #fff; }
 
-/* line 36, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
+/* line 40, /Users/Chad/Documents/WebDevelopment/Oakenfold_Enterprises_Ltd/Clients/Province of British Columbia/bcdevexchange/interactive-infographic/code/interactiveWebAppPrototype/sass/main.scss */
 .contentPanel--alt1 {
   background-color: #8dc642; }
