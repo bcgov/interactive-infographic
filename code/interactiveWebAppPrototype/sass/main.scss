@@ -5,38 +5,4 @@
   display: none;
 }
 
-.contentBtn {
-  color: black;
-  border: none;
-  padding: 0 10px;
-  display: block;
-  text-align: left;
-  background-color: #0dabc5;
-  border-radius: 10px 0 10px 0;
-  text-align: center;
-  color: #fff;
-  min-height: 72px;
-  width: 100%;
-  vertical-align: middle;
-}
-.contentBtn[aria-pressed='true'] {
-  border-radius: 10px 0 0 0;
-}
-.contentBtn[aria-pressed='false'] {
-}
-.contentBtn--alt1 {
-  background-color: #8dc642;
-}
-
-.contentBtnYoutube {
-  cursor: pointer;
-}
-
-.contentPanel {
-  background-color: #0dabc5;
-  border-radius: 10px 0 10px 0;
-  color: #fff;
-}
-.contentPanel--alt1 {
-  background-color: #8dc642;
-}
+@import 'infogfx';

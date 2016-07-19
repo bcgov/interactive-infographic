@@ -1,19 +1,18 @@
 /* ================================================
-  General
-================================================ */
-[aria-hidden='true'] {
-  display: none; }
-
-/* ================================================
   Block
 ================================================ */
+.infogfx {
+  // style if needed, eg: max width
+}
+
 /* ================================================
   Elements
 ================================================ */
 .infogfx__accordionPanel {
   background-color: #0dabc5;
   border-radius: 10px 0 10px 0;
-  color: #fff; }
+  color: #fff;
+}
 
 .infogfx__accordionTrigger {
   background-color: #0dabc5;
@@ -26,19 +25,31 @@
   padding: 0 10px;
   text-align: center;
   vertical-align: middle;
-  width: 100%; }
+  width: 100%;
+}
 
 .infogfx__accordionTriggerYoutube {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /* ================================================
   Modifiers: different versions, state, media queries
 ================================================ */
 .infogfx__accordionPanel--alt1 {
-  background-color: #8dc642; }
+  background-color: #8dc642;
+}
 
 .infogfx__accordionTrigger[aria-pressed='true'] {
-  border-radius: 10px 0 0 0; }
+  border-radius: 10px 0 0 0;
+}
+
+.infogfx__accordionTrigger[aria-pressed='false'] {
+  //...
+}
 
 .infogfx__accordionTrigger--alt1 {
-  background-color: #8dc642; }
+  background-color: #8dc642;
+}
+
+
+

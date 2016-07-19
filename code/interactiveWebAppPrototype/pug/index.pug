@@ -12,7 +12,7 @@ html(lang="en")
     style.
       
   body
-    .container-fluid.js-accordionContainer
+    .infogfx.container-fluid.js-accordionContainer
       
       .row
         .col-xs-2
@@ -20,7 +20,7 @@ html(lang="en")
         .col-xs-6
           P Message from the OCIO
         .col-xs-1
-          span.contentBtnYoutube(
+          span.infogfx__accordionTriggerYoutube(
             data-toggle='modal'
             data-target='#modalVideo'
           )
@@ -59,7 +59,7 @@ html(lang="en")
 
 
         .col-xs-2
-          button.contentBtn(
+          button.infogfx__accordionTrigger(
             type="button"
             data-toggle="modal" 
             data-target="#modalAboutOCIO"
@@ -67,14 +67,14 @@ html(lang="en")
 
       .row
         .col-xs-6
-          button.contentBtn.js-accordion(
+          button.infogfx__accordionTrigger.js-accordion(
             role="button" 
             data-href="#content1" 
             aria-expanded="false" 
             aria-controls="content1"
           ) Job Creation and Investment
         .col-xs-6
-          button.contentBtn.js-accordion(
+          button.infogfx__accordionTrigger.js-accordion(
             role="button" 
             data-href="#content2" 
             aria-expanded="false" 
@@ -83,13 +83,13 @@ html(lang="en")
 
       //- Hidden row of accordion panels
       .row
-        #content1.contentPanel.col-xs-12(
+        #content1.infogfx__accordionPanel.col-xs-12(
           aria-hidden="true"
         )
           h2 Job Creation and Investment
           p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eum nihil magni excepturi saepe dolorem, ut magnam iusto repellendus nisi nulla nobis amet vitae architecto pariatur ea quidem, aliquam ab.
 
-        #content2.contentPanel.col-xs-12(
+        #content2.infogfx__accordionPanel.col-xs-12(
           aria-hidden="true"
         )
           h2 Support for Families
@@ -115,21 +115,21 @@ html(lang="en")
       
       .row
         .col-xs-4
-          button.contentBtn.contentBtn--alt1.js-accordion(
+          button.infogfx__accordionTrigger.infogfx__accordionTrigger--alt1.js-accordion(
             role="button" 
             data-href="#content3" 
             aria-expanded="false" 
             aria-controls="content3"
           ) Environment for Businesses to Succeed
         .col-xs-4
-          button.contentBtn.contentBtn--alt1.js-accordion(
+          button.infogfx__accordionTrigger.infogfx__accordionTrigger--alt1.js-accordion(
             role="button" 
             data-href="#content4" 
             aria-expanded="false" 
             aria-controls="content4"
           ) Easier Interactions with Government for Citizens and Businesses
         .col-xs-4
-          button.contentBtn.contentBtn--alt1.js-accordion(
+          button.infogfx__accordionTrigger.infogfx__accordionTrigger--alt1.js-accordion(
             role="button" 
             data-href="#content5" 
             aria-expanded="false" 
@@ -137,19 +137,19 @@ html(lang="en")
           ) Efficient &amp; Effective Services for the Public Sector
 
       .row
-        #content3.contentPanel.contentPanel--alt1.col-xs-12(
+        #content3.infogfx__accordionPanel.infogfx__accordionPanel--alt1.col-xs-12(
           aria-hidden="true"
         )
           h2 Environment for Businesses to Succeed
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsa neque impedit dolor consectetur quas officia hic! Asperiores nulla sapiente doloremque cum, fugit voluptatem, nemo tempora, dignissimos officia fuga qui!
 
-        #content4.contentPanel.contentPanel--alt1.col-xs-12(
+        #content4.infogfx__accordionPanel.infogfx__accordionPanel--alt1.col-xs-12(
           aria-hidden="true"
         )
           h2 Easier Interactions with Government for Citizens and Businesses
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim incidunt quasi minus non animi magni labore asperiores maxime soluta, eum libero eligendi excepturi nobis. Quos, labore. Tenetur soluta magni est!
 
-        #content5.contentPanel.contentPanel--alt1.col-xs-12(
+        #content5.infogfx__accordionPanel.infogfx__accordionPanel--alt1.col-xs-12(
           aria-hidden="true"
         )
           h2 Efficient &amp; Effective Services for the Public Sector
@@ -179,6 +179,7 @@ html(lang="en")
 
                 .embed-responsive.embed-responsive-16by9
                   #youtubeVideo
+
         div.modal.fade(
           id="modalAboutOCIO" 
           tabindex="-1" 

@@ -46,12 +46,12 @@ The js & css is toggling visibility via the `aria-hidden` attribute on the conte
 
 The accordion 'triggers' can be styled using the `aria-pressed` attribute:
 
-    .contentBtn[aria-pressed='true'] {
+    .infogfx__accordionTrigger[aria-pressed='true'] {
       border-radius: 10px 0 0 0;
       //...
     }
     
-    .contentBtn[aria-pressed='false'] {
+    .infogfx__accordionTrigger[aria-pressed='false'] {
       //...
     }
 
