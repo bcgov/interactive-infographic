@@ -67,6 +67,8 @@ All code in the /code directory is licensed under the Apache License 2.0. See LI
 
 
 
+	Copyright 2016 Province of British Columbia
+	
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at 
