@@ -1,0 +1,89 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "bootstrap-tabcollapse@0.2.6",
+        "scope": null,
+        "escapedName": "bootstrap-tabcollapse",
+        "name": "bootstrap-tabcollapse",
+        "rawSpec": "0.2.6",
+        "spec": "0.2.6",
+        "type": "version"
+      },
+      "/Users/scottporter/Dropbox/Documents/Contracting/OCIO/interactive-infographic"
+    ]
+  ],
+  "_from": "bootstrap-tabcollapse@0.2.6",
+  "_id": "bootstrap-tabcollapse@0.2.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/bootstrap-tabcollapse",
+  "_nodeVersion": "5.3.0",
+  "_npmUser": {
+    "name": "patlux",
+    "email": "dev@patwoz.de"
+  },
+  "_npmVersion": "3.3.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "bootstrap-tabcollapse@0.2.6",
+    "scope": null,
+    "escapedName": "bootstrap-tabcollapse",
+    "name": "bootstrap-tabcollapse",
+    "rawSpec": "0.2.6",
+    "spec": "0.2.6",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bootstrap-tabcollapse/-/bootstrap-tabcollapse-0.2.6.tgz",
+  "_shasum": "475bad963020c2900519848b24d63c4be7050d7f",
+  "_shrinkwrap": null,
+  "_spec": "bootstrap-tabcollapse@0.2.6",
+  "_where": "/Users/scottporter/Dropbox/Documents/Contracting/OCIO/interactive-infographic",
+  "author": {
+    "name": "okendoken",
+    "url": "http://flatlogic.com"
+  },
+  "bugs": {
+    "url": "https://github.com/patlux/bootstrap-tabcollapse/issues"
+  },
+  "dependencies": {},
+  "description": "Bootstrap plugin that switches bootstrap tabs component to collapse component for small screens.",
+  "devDependencies": {},
+  "directories": {
+    "example": "example"
+  },
+  "dist": {
+    "shasum": "475bad963020c2900519848b24d63c4be7050d7f",
+    "tarball": "https://registry.npmjs.org/bootstrap-tabcollapse/-/bootstrap-tabcollapse-0.2.6.tgz"
+  },
+  "gitHead": "93f766b35f776c7520ce6bd78ac5d54a1c6c0391",
+  "homepage": "https://github.com/patlux/bootstrap-tabcollapse#readme",
+  "keywords": [
+    "bootstrap",
+    "tabs",
+    "collapse",
+    "responsive"
+  ],
+  "license": "MIT",
+  "main": "./bootstrap-tabcollapse.js",
+  "maintainers": [
+    {
+      "name": "patlux",
+      "email": "dev@patwoz.de"
+    }
+  ],
+  "name": "bootstrap-tabcollapse",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patlux/bootstrap-tabcollapse.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.2.6"
+}

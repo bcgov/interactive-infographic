@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>OCIO Interactive Infographic</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="css/site.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
+  </head>
+
+  <body>
+	<!-- Nav Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img class="hidden-xs" src="img/logo.png" /></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a type="button" 	data-toggle="modal" data-target="#videoModal">
+							<span class="glyphicon glyphicon-film"></span> Watch Video
+						</a	>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- / Nav Bar -->
+
+
+	<div class="container main-content">
+		<!-- First content group -->
+		<div class="vertical-wrapper">
+			<!-- Left horizontal area -->
+			<div class="left hidden-sm hidden-xs">
+				<div class="frame">
+					<div class="tab">
+						<div class="tab-rounded blue"></div>
+						<div class="caption"><b>Alignment</b> to Government Priorities</div>
+					</div>
+				</div>
+			</div>
+			<!-- / Left horizontal area -->
+			
+			<!-- Right content area -->
+			<div class="right">
+				<div class="fluid-container">
+					<!-- First row of blue tabs -->
+					<div class="row">
+						<ul class="adaptive-tabs nav nav-tabs">
+							<li class="col-md-3">
+								<div href="#StrongEconomy" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<img class="svg hidden-xs hidden-sm" src="img/header/StrongEconomy.svg" />
+									<h1 class="blue">Strong Economy</h1>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div href="#NaturalResources" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<img class="svg hidden-xs hidden-sm" src="img/header/NaturalResources.svg" />
+									<h1 class="blue">Natural Resources</h1>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div href="#SecureTomorrow" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<img class="svg hidden-xs hidden-sm" src="img/header/SecureTomorrow.svg" />
+									<h1 class="blue">Secure Tomorrow</h1>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div href="#KnowledgeSectors" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<img class="svg hidden-xs hidden-sm" src="img/header/KnowledgeSectors	.svg" />
+									<h1 class="blue">Knowledge Sectors</h1>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="row">
+						<div class="tab-content col-md-12">
+							<div class="tab-pane fade" id="StrongEconomy">
+								<p><img src="img/security.png" height="50px" />This text comes after an image. This text contains a link to <a href="http://www.google.com">Google</a>.
+							</div>
+							<div class="tab-pane fade" id="NaturalResources">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<button class="btn btn-lg btn-primary">Button with click event attached</button>
+							</div>
+							<div class="tab-pane fade" id="SecureTomorrow">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="tab-pane fade" id="KnowledgeSectors">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<!-- / First row of blue tabs -->
+
+					<!-- Second row of blue tabs -->
+					<div class="row">
+						<ul class="adaptive-tabs nav nav-tabs">
+							<li class="col-md-3">
+								<div href="#ServiceExperience" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="blue">Modernize the Citizen Service Experience</h1>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div href="#ModernizeWorkplaces" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="blue">Modernize Government Systems and Workplaces</h1>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div href="#EngagePeople" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="blue">Engage and Develop our People</h1>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div href="#SupportGrowth" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="blue">Support the Growth of the BC Tech Sector</h1>
+								</div>
+							</li>
+						</ul>
+					</div>
+						
+					<div class="row">
+						<div class="tab-content col-md-12">
+							<div class="tab-pane fade" id="ServiceExperience">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="tab-pane fade" id="ModernizeWorkplaces">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<button class="btn btn-lg btn-primary">Button with click event attached</button>
+							</div>
+							<div class="tab-pane fade" id="EngagePeople">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="tab-pane fade" id="SupportGrowth">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<!-- / Second row of blue tabs -->
+
+
+					<div class="row">
+						<div class="col-md-12 header-line">
+							Excellent and innovation in technology, services and program delivery for British Columbians
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- / Right content area -->
+
+		</div>
+		<!-- / First content group -->
+
+		<!-- Second content group -->
+		<div class="vertical-wrapper">
+			<!-- Left horizontal area -->
+			<div class="left hidden-sm hidden-xs">
+				<div class="frame">
+					<div class="tab">
+						<div class="tab-rounded green"></div>
+						<div class="caption"><b>Alignment</b> to Government Priorities</div>
+					</div>
+				</div>
+			</div>
+			<!-- / Left horizontal area -->
+			
+			<!-- Right content area -->
+			<div class="right">
+				<div class="fluid-container">
+					<!-- First row of green tabs -->
+					<div class="row">
+						<ul class="adaptive-tabs nav nav-tabs">
+							<li class="col-md-2">
+								<div href="#1" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="inverse-green">CONNECT<br /><img src="img/p-data.png" /></h1>
+								</div>
+							</li>
+							<li class="col-md-2">
+								<div href="#2" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="inverse-green">SECURITY<br /><img src="img/security-new.png" /></h1>
+								</div>
+							</li>
+							<li class="col-md-2">
+								<div href="#3" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="inverse-green">DIGITAL<br /><img src="img/p-digital.png" /></h1>
+								</div>
+							</li>
+							<li class="col-md-2">
+								<div href="#4" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="inverse-green">CLOUD<br /><img src="img/p-cloud.png" /></h1>
+								</div>
+							</li>
+							<li class="col-md-2">
+								<div href="#5" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="inverse-green">MOBILITY<br /><img src="img/p-mobility.png" /></h1>
+								</div>
+							</li>
+							<li class="col-md-2">
+								<div href="#6" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="inverse-green">BROADBAND<br /><img src="img/p-broadband.png" /></h1>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="row">
+						<div class="tab-content col-md-12">
+							<div class="tab-pane fade" id="1">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="tab-pane fade" id="2">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<button class="btn btn-lg btn-primary">Button with click event attached</button>
+							</div>
+							<div class="tab-pane fade" id="3">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="tab-pane fade" id="4">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="tab-pane fade" id="5">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="tab-pane fade" id="6">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<!-- / First row of green tabs -->
+
+					<!-- Second row of green tabs -->
+					<div class="row">
+						<ul class="adaptive-tabs nav nav-tabs">
+							<li class="col-md-3">
+								<div href="#7" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="green">Modernize the Citizen Service Experience</h1>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div href="#8" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="green">Modernize Government Systems and Workplaces</h1>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div href="#9" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="green">Engage and Develop our People</h1>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div href="#10" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="green">Support the Growth of the BC Tech Sector</h1>
+								</div>
+							</li>
+						</ul>
+					</div>
+						
+					<div class="row">
+						<div class="tab-content col-md-12">
+							<div class="tab-pane fade" id="7">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="tab-pane fade" id="8">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<button class="btn btn-lg btn-primary">Button with click event attached</button>
+							</div>
+							<div class="tab-pane fade" id="9">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="tab-pane fade" id="10">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<!-- / Second row of green tabs -->
+				</div>
+			</div>
+			<!-- / Right content area -->
+
+		</div>
+		<!-- / Second content group -->
+
+		<!-- Third content group -->
+		<div class="vertical-wrapper">
+			<!-- Left horizontal area -->
+			<div class="left hidden-sm hidden-xs">
+				<div class="frame">
+					<div class="tab">
+						<div class="tab-rounded dark-blue"></div>
+						<div class="caption">Short</div>
+					</div>
+				</div>
+			</div>
+			<!-- / Left horizontal area -->
+			
+			<!-- Right content area -->
+			<div class="right">
+				<div class="fluid-container">
+					<!-- First row of dark blue tabs -->
+					<div class="row">
+						<ul class="adaptive-tabs nav nav-tabs">
+							<li class="col-md-12">
+								<div href="#11" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="dark-blue">Strong Economy</h1>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="row">
+						<div class="tab-content col-md-12">
+							<div class="tab-pane fade" id="11">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<!-- / First row of dark blue tabs -->
+
+
+					<!-- First row of dark blue tabs -->
+					<div class="row">
+						<ul class="adaptive-tabs nav nav-tabs">
+							<li class="col-md-6">
+								<div href="#12" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="dark-blue">Strong Economy 123</h1>
+								</div>
+							</li>
+							<li class="col-md-6">
+								<div href="#13" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" aria-expanded="false">
+									<h1 class="dark-blue">Strong Economy 456</h1>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="row">
+						<div class="tab-content col-md-12">
+							<div class="tab-pane fade" id="12">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div class="tab-content col-md-12">
+							<div class="tab-pane fade" id="13">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<!-- / First row of dark blue tabs -->
+				</div>
+			</div>
+			<!-- / Right content area -->
+
+		</div>
+		<!-- / Third content group -->
+		
+	</div>
+
+
+	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!--
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				-->
+				<div class="modal-body">
+					<p>
+						<iframe id="ytplayer" type="text/html" width="100%" height="350px" src="https://www.youtube.com/embed/r0AxuT28-ic?" frameborder="0"></iframe>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div><!-- / modal-content -->
+		</div><!-- / modal-dialog -->
+	</div><!-- / modal -->
+
+	<script type="text/javascript">
+		$(".adaptive-tabs").tabCollapse({
+			tabsClass: 'hidden-sm hidden-xs col-md-12',
+			accordionClass: 'visible-sm visible-xs col-md-12'
+		});
+	</script>
+  </body>
+</html>

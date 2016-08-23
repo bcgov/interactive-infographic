@@ -1,0 +1,145 @@
+body {
+	padding-top: 65px;
+	background-color: #EEE;
+}
+
+.navbar-default {
+	background-color: white;
+	box-shadow: 0px 0px 5px #888888;
+}
+
+	.navbar-default .navbar-brand {
+		color: #00498C !important;
+		font-size: 3rem;
+		font-weight: bold;
+		padding: 6px;
+	}
+
+.blue {
+	background-color: #00AAC4;
+}
+
+	.blue:hover {
+		background-color: #009bb3;
+	}
+
+	.active .blue {
+		background-color: #006f80;
+	}
+
+.green {
+	background-color: #8CC63F;
+}
+
+	.green:hover {
+		background-color: #7bb135;
+	}
+
+	.active .green {
+		background-color: #527623;
+	}
+
+.inverse-green {
+	background-color: white;
+	color: #8CC63F;
+	text-align: center;
+}
+	.inverse-green img {
+		height: 50px;
+	}
+
+.dark-blue {
+	background-color: #00498C;
+}
+
+	.dark-blue:hover {
+		background-color: #003566;
+	}
+
+	.active .dark-blue {
+		background-color: #00284d;
+	}
+
+
+.header-line {
+	color: #00AAC4;
+	text-align: center;
+	font-weight: bold;
+}
+
+.nav-tabs {
+	border: none;
+	text-align: center;
+}
+
+	.nav-tabs img.svg {
+		margin-bottom: -20px;
+	}
+
+	.nav-tabs h1 {
+		color: white;
+		border-radius: 15px 0 15px 0;
+		padding: 20px 5px;
+
+
+		font-size: 2rem;
+		font-weight: normal;
+		text-align: center;
+	}
+
+.panel-heading, .panel, .panel-body {
+	border: none !important;
+	padding: 0;
+}
+
+.vertical-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+	.vertical-wrapper .frame {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		width: 50px;
+		height: 100%;
+	}
+
+		.vertical-wrapper .frame .tab {
+			width: 100%;
+			height: 100%;
+		}
+
+			.vertical-wrapper .frame .tab .tab-rounded {
+				width: 100%;
+				height: 100%;
+				border-radius: 15px 0 0 15px;
+			}
+			
+			.vertical-wrapper .frame .tab .caption {
+				color: white;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				line-height: 0px;  /* centre the text on the base line */
+				white-space: nowrap;
+				font-size: 0.9em;
+
+				-ms-transform: translateX(-50%) rotate(-90deg) ;
+				-webkit-transform: translateX(-50%) rotate(-90deg);
+				transform: translateX(-50%) rotate(-90deg);
+			}
+
+
+.main-content {
+	background-color: white;
+}
+
+	.main-content .left {
+		flex: 1 10%;
+		padding: 20px 0 10px 0;
+	}
+
+	.main-content .right {
+		flex: 11 90%;
+	}
