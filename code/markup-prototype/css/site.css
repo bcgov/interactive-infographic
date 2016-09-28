@@ -3,20 +3,13 @@ body {
 	background-color: #EEE;
 }
 
-.navbar-default {
-	background-color: white;
-	box-shadow: 0px 0px 5px #888888;
+h1 {
+	margin: 0;
 }
-
-	.navbar-default .navbar-brand {
-		color: #00498C !important;
-		font-size: 3rem;
-		font-weight: bold;
-		padding: 6px;
-	}
 
 .blue {
 	background-color: #00AAC4;
+	color: white;
 }
 
 	.blue:hover {
@@ -27,8 +20,28 @@ body {
 		background-color: #006f80;
 	}
 
+	.blue.tab {
+		background-color: inherit;
+	}
+
+		.blue.tab > .tab-rounded {
+			background-color: #00AAC4;
+			font-size: 5em;
+		}
+
+.inverse-blue {
+	background-color: white;
+	color: #00AAC4;
+	text-align: center;
+}
+
+	.dashed-border {
+		border: 5px #00AAC4 dashed;
+	}
+
 .green {
 	background-color: #8CC63F;
+	color: white;
 }
 
 	.green:hover {
@@ -39,17 +52,33 @@ body {
 		background-color: #527623;
 	}
 
+	.green.tab {
+		background-color: inherit;
+	}
+
+		.green.tab > .tab-rounded {
+			background-color: #7bb135;
+			font-size: 5em;
+		}
+
+	.dark-green {
+		background-color: #7bb135;
+		z-index: 2;
+		color: white;
+	}
+
 .inverse-green {
 	background-color: white;
 	color: #8CC63F;
 	text-align: center;
 }
 	.inverse-green img {
-		height: 50px;
+		height: 60px;
 	}
 
 .dark-blue {
 	background-color: #00498C;
+	color: white;
 }
 
 	.dark-blue:hover {
@@ -60,6 +89,72 @@ body {
 		background-color: #00284d;
 	}
 
+	.dark-blue.tab {
+		background-color: inherit;
+	}
+
+		.dark-blue.tab > .tab-rounded {
+			background-color: #00498C;
+			font-size: 5em;
+		}
+
+.inverse-dark-blue {
+	background-color: white;
+	color: #00498C;
+	text-align: center;
+}
+
+	.inverse-dark-blue img {
+		height: 50px;
+	}
+
+.circle-parent div {
+	margin: 0 auto;
+}
+
+	.circle-border {
+		width: 150px;
+		height: 150px;
+		border-radius: 75px;
+		font-size: 1.5em;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+.puzzle {
+	padding: 0;
+}
+
+	.puzzle .puzzle-background {
+		width: 100%;
+		height: 150px;
+	}
+
+	.puzzle .puzzle-text {
+		padding: 50px;
+	}
+
+	.puzzle .puzzle-circle {
+		width: 50px;
+		height: 50px;
+
+		position: absolute;
+		top: 50%;
+		margin-top: -25px;
+	}
+
+		.puzzle .puzzle-circle.right {
+			right: 0;
+			margin-right: -25px;
+			border-radius: 0 25px 25px 0;
+		}
+
+		.puzzle .puzzle-circle.left {
+			left: 0;
+			margin-left: -25px;
+			border-radius: 25px 0 0 25px;
+		}
 
 .header-line {
 	color: #00AAC4;
@@ -72,29 +167,44 @@ body {
 	text-align: center;
 }
 
-	.nav-tabs img.svg {
-		margin-bottom: -20px;
-	}
-
 	.nav-tabs h1 {
-		color: white;
 		border-radius: 15px 0 15px 0;
 		padding: 20px 5px;
 
 
-		font-size: 2rem;
+		font-size: 2.5rem;
 		font-weight: normal;
 		text-align: center;
+	}
+
+	.nav-tabs h1.small {
+		font-size: 1.5rem;
+	}
+
+	.nav-tabs h2 {
+		margin-bottom: 0;
+	}
+
+	.nav-tabs.goals h1 {
+		font-size: 2rem;
+		padding: 25px 10px;
 	}
 
 .panel-heading, .panel, .panel-body {
 	border: none !important;
 	padding: 0;
+	background-color: white !important;
+	box-shadow: none;
+}
+
+.tab-content>.tab-pane {
+    margin-top: 10px;
 }
 
 .vertical-wrapper {
 	display: flex;
 	flex-flow: row nowrap;
+	margin-top: 10px;
 }
 
 	.vertical-wrapper .frame {
@@ -117,18 +227,28 @@ body {
 			}
 			
 			.vertical-wrapper .frame .tab .caption {
-				color: white;
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				line-height: 0px;  /* centre the text on the base line */
 				white-space: nowrap;
-				font-size: 0.9em;
+				font-size: 1.2em;
 
 				-ms-transform: translateX(-50%) rotate(-90deg) ;
 				-webkit-transform: translateX(-50%) rotate(-90deg);
 				transform: translateX(-50%) rotate(-90deg);
 			}
+
+				.vertical-wrapper .frame .tab .caption.wrap {
+					line-height: 1em;
+					white-space: normal;
+					padding-left: 30px;
+				}
+
+				.vertical-wrapper .frame .tab .caption h3 {
+					color: white;
+					margin: 0;
+				}
 
 
 .main-content {
@@ -136,10 +256,32 @@ body {
 }
 
 	.main-content .left {
-		flex: 1 10%;
-		padding: 20px 0 10px 0;
+		flex: 1 5%;
 	}
 
 	.main-content .right {
-		flex: 11 90%;
+		flex: 11 95%;
 	}
+
+.core-functions .col-md-a {
+	width: 11%;
+	padding: 0;
+}
+	
+	.core-functions .col-md-a img {
+		margin-bottom: 10px;
+	}
+
+
+.key-projects .inverse-dark-blue {
+	font-size: 1.25em;
+}
+
+	.key-projects .inverse-dark-blue img {
+		height: 65px;
+		margin-bottom: 10px;
+	}
+
+.ocio-mission h1 {
+	border-radius: inherit;
+}
