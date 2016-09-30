@@ -1,5 +1,4 @@
 body {
-	padding-top: 65px;
 	background-color: #EEE;
 }
 
@@ -7,7 +6,8 @@ h1 {
 	margin: 0;
 }
 
-.blue {
+.blue,
+.blue.small {
 	background-color: #00AAC4;
 	color: white;
 }
@@ -36,10 +36,11 @@ h1 {
 }
 
 	.dashed-border {
-		border: 5px #00AAC4 dashed;
+		border: 3px #00AAC4 dashed;
 	}
 
-.green {
+.green,
+.green.small {
 	background-color: #8CC63F;
 	color: white;
 }
@@ -115,6 +116,7 @@ h1 {
 	.circle-border {
 		width: 150px;
 		height: 150px;
+		margin: auto;
 		border-radius: 75px;
 		font-size: 1.5em;
 		display: flex;
@@ -169,7 +171,7 @@ h1 {
 
 	.nav-tabs h1 {
 		border-radius: 15px 0 15px 0;
-		padding: 20px 5px;
+		padding: 25px 5px;
 
 
 		font-size: 2.5rem;
@@ -186,15 +188,33 @@ h1 {
 	}
 
 	.nav-tabs.goals h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		padding: 25px 10px;
 	}
 
-.panel-heading, .panel, .panel-body {
+	.nav-tabs > li > a {
+		margin-right: 0; 
+		border: none;
+	/* border-radius: 4px 4px 0 0; */
+	}
+.nav > li > a {
+	position: initial; 
+ 	padding: 0; 
+}
+
+.panel-heading,
+.panel,
+.panel-body {
 	border: none !important;
 	padding: 0;
 	background-color: white !important;
 	box-shadow: none;
+}
+
+.panel-title h1 {
+	font-size: 2rem;
+	padding: 20px;
+	text-align: center;
 }
 
 .tab-content>.tab-pane {
@@ -253,6 +273,7 @@ h1 {
 
 .main-content {
 	background-color: white;
+	padding: 20px 20px;
 }
 
 	.main-content .left {
@@ -263,6 +284,18 @@ h1 {
 		flex: 11 95%;
 	}
 
+@media (min-width: 768px) {
+	.main-content {
+		padding-top: 65px;
+	}
+}
+
+@media (max-width: 767px) {
+	#header #header-main-row1 {
+	    margin-left: 15px;
+	}
+}
+
 .core-functions .col-md-a {
 	width: 11%;
 	padding: 0;
@@ -270,6 +303,15 @@ h1 {
 	
 	.core-functions .col-md-a img {
 		margin-bottom: 10px;
+	}
+
+.technology-pillars {
+	margin-bottom: 20px;	
+}
+
+	.technology-pillars .col-md-a {
+		width: 20%;
+		padding: 0 25px;
 	}
 
 
@@ -280,6 +322,10 @@ h1 {
 	.key-projects .inverse-dark-blue img {
 		height: 65px;
 		margin-bottom: 10px;
+	}
+
+	.key-projects .col-md-a {
+		width: 14.2%;
 	}
 
 .ocio-mission h1 {
