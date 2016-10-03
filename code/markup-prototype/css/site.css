@@ -325,9 +325,13 @@ h1 {
 		}
 	}
 
-.ocio-mission h1 {
-	border-radius: inherit;
+.ocio-mission {
+	margin-top: 0;
 }
+
+	.ocio-mission h1 {
+		border-radius: inherit;
+	}
 
 .strategic-goals .row,
 .core-functions .row {
