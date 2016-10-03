@@ -7,7 +7,8 @@ h1 {
 }
 
 .js-tabcollapse-panel-heading:hover > *,
-.active .js-tabcollapse-panel-heading > * {
+.active .js-tabcollapse-panel-heading > *,
+.technology-pillars a:hover {
 	opacity: 0.8;
 }
 
