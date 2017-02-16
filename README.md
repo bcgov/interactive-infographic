@@ -1,6 +1,6 @@
 # Interactive-Infographic
 
-## Who 
+## Who
 The Office of the Chief Information Officer (OCIO) is a central agency of the Province of B.C. that leads strategy, policy and standards for information technology, IT security and the management of the IM/IT investment portfolio for the Province.
 
 ##Why
@@ -8,14 +8,14 @@ The OCIO is looking for the development of an online infographic for users to in
 
 The [OCIO Strategic FrameWork diagram](https://raw.githubusercontent.com/bcgov/interactive-infographic/master/wireframe/OCIO_Strategy_Framework.png) is a guide.
 
-##What 
-This [wireframe](https://github.com/bcgov/interactive-infographic/blob/master/wireframe/wireframe.png) illustrates how the main screen of the interactive infographic might look, and offers some visual context. 
+##What
+This [wireframe](https://github.com/bcgov/interactive-infographic/blob/master/wireframe/wireframe.png) illustrates how the main screen of the interactive infographic might look, and offers some visual context.
 
 This [second diagram](https://github.com/bcgov/interactive-infographic/blob/master/wireframe/user-interaction.png) illustrates how a user might interact with the infographic.
 
 
-##Design: 
-Ensure that the “content boxes (see wireframe)” can be resized vertically or horizontally, reordered, new content boxes can be added or existing ones removed, graphics, videos and text can be replaced, and additional “content elements” can added to a “content box” or existing ones removed. 
+##Design:
+Ensure that the “content boxes (see wireframe)” can be resized vertically or horizontally, reordered, new content boxes can be added or existing ones removed, graphics, videos and text can be replaced, and additional “content elements” can added to a “content box” or existing ones removed.
 
 The working prototype may include user navigation/interactive features, including expanding/collapsing content “accordion”, opening dialog windows for more information, tabs, sliders, etc.
 
@@ -37,7 +37,7 @@ We will iteratively work on this project. Here's a few thoughts on the desired f
 
 - Flexibility so that the infographic structure (i.e. content boxes & content elements) can be easily modified.
 
-- Flexibility so that the content (e.g. graphics, text, links) can be easily replaced or modified. 
+- Flexibility so that the content (e.g. graphics, text, links) can be easily replaced or modified.
 
 - Device agnostic and responsive.
 
@@ -45,11 +45,36 @@ We will iteratively work on this project. Here's a few thoughts on the desired f
 
 
 ##References
-- Wireframe. 
+- Wireframe.
 - An existing OCIO Framework diagram for inspiration.
 - User Interaction example.
 - Other similar examples with similar functionality:
 [http://www.healthcarevaluehub.org/improving-value/interactive_strategies/](http://www.healthcarevaluehub.org/improving-value/interactive_strategies/)
+
+##How to run
+
+#### Locally
+
+- Install Docker
+- Clone the repo
+
+`git clone https://github.com/bcgov/interactive-infographic.git`
+
+- change to your new clone's working directory:
+
+`cd interactive-infographic`
+
+- Build the docker image
+
+`docker build -t  interactive-infographic .`
+
+- Run the image
+
+`docker run -p 2015:2015 interactive-infographic`
+
+- Open your browser to 'http://localhost:2015'
+
+- Rejoice!
 
 ##Project Status
 We are actively seeking development work. Additional issues may be created once the prototype is developed for things we would like augment or change.
@@ -68,10 +93,10 @@ All code in the /code directory is licensed under the Apache License 2.0. See LI
 
 
 	Copyright 2016 Province of British Columbia
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at 
+	You may obtain a copy of the License at
 
    	http://www.apache.org/licenses/LICENSE-2.0
 
@@ -80,7 +105,3 @@ All code in the /code directory is licensed under the Apache License 2.0. See LI
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-
-
-
-
