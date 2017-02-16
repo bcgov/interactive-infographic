@@ -16,6 +16,7 @@ body {
 
 a {
 	color: #1a5a96;
+	font-weight:bold;
 }
 /*
 h1, h2, h3, h4, h5 {
@@ -1260,9 +1261,9 @@ img.back-to-top:hover {
 	#header {
 		z-index: 2;
 	}
-	#header .container {
+	/*#header .container {
 		padding: 0;
-	}
+	}*/
 	#header .qa-banner .container .qa-banner-text {
 		font-size: 13px;
 	}
