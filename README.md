@@ -3,25 +3,25 @@
 ## Who
 The Office of the Chief Information Officer (OCIO) is a central agency of the Province of B.C. that leads strategy, policy and standards for information technology, IT security and the management of the IM/IT investment portfolio for the Province.
 
-##Why
+## Why
 The OCIO is looking for the development of an online infographic for users to interact with. The purpose is to clearly convey multi-dimensional information in a user-friendly, interactive, digital format.
 
 The [OCIO Strategic FrameWork diagram](https://raw.githubusercontent.com/bcgov/interactive-infographic/master/wireframe/OCIO_Strategy_Framework.png) is a guide.
 
-##What
+## What
 This [wireframe](https://github.com/bcgov/interactive-infographic/blob/master/wireframe/wireframe.png) illustrates how the main screen of the interactive infographic might look, and offers some visual context.
 
 This [second diagram](https://github.com/bcgov/interactive-infographic/blob/master/wireframe/user-interaction.png) illustrates how a user might interact with the infographic.
 
 
-##Design:
+## Design:
 Ensure that the “content boxes (see wireframe)” can be resized vertically or horizontally, reordered, new content boxes can be added or existing ones removed, graphics, videos and text can be replaced, and additional “content elements” can added to a “content box” or existing ones removed.
 
 The working prototype may include user navigation/interactive features, including expanding/collapsing content “accordion”, opening dialog windows for more information, tabs, sliders, etc.
 
 For the prototype, dummy graphics, text and videos can be used; however, the developer will be expected to provide guidance on how government staff can best ready the production graphics, videos and text (e.g. format, etc.) that will eventually populate the live site.
 
-##Out of scope:
+## Out of scope:
 - Selection or development of content (e.g. graphics, images, videos, etc.).
 
 
@@ -29,7 +29,7 @@ For the prototype, dummy graphics, text and videos can be used; however, the dev
 
 - Hosting of the site.
 
-##The End Result
+## The End Result
 
 We will iteratively work on this project. Here's a few thoughts on the desired features for the end-state:
 
@@ -44,14 +44,14 @@ We will iteratively work on this project. Here's a few thoughts on the desired f
 - Use of commonly known, open web frameworks.
 
 
-##References
+## References
 - Wireframe.
 - An existing OCIO Framework diagram for inspiration.
 - User Interaction example.
 - Other similar examples with similar functionality:
 [http://www.healthcarevaluehub.org/improving-value/interactive_strategies/](http://www.healthcarevaluehub.org/improving-value/interactive_strategies/)
 
-##How to run
+## How to run
 
 #### Locally
 
@@ -76,17 +76,17 @@ We will iteratively work on this project. Here's a few thoughts on the desired f
 
 - Rejoice!
 
-##Project Status
+## Project Status
 We are actively seeking development work. Additional issues may be created once the prototype is developed for things we would like augment or change.
 
-##Getting Help or Reporting an Issue
+## Getting Help or Reporting an Issue
 To report bugs/issues/feature requests, please file an [issue](https://github.com/bcgov/interactive-infographic/issues).
 
-##How to Contribute
+## How to Contribute
 If you would like to contribute to the package, please see our [CONTRIBUTING guidelines](https://github.com/bcgov/interactive-infographic/blob/master/CONTRIBUTING.md).
 Please note that this project is released with a [Contributor Code of Conduct](https://github.com/bcgov/interactive-infographic/blob/master/CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-##License
+## License
 
 All code in the /code directory is licensed under the Apache License 2.0. See LICENSE.Apache-2.0 in the appropriate directories.
 
